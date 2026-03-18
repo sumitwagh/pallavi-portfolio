@@ -74,7 +74,7 @@ export default function ContactForm() {
       </button>
       {status === "ok" && (
         <p role="status" aria-live="polite" className="font-sans text-sm text-emerald-600 dark:text-emerald-400 flex items-center gap-2">
-          <span>✓</span> Sent! I'll get back to you soon.
+          <span>✓</span> Sent! I&apos;ll get back to you soon.
         </p>
       )}
       {status === "err" && (

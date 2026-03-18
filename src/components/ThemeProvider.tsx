@@ -14,7 +14,7 @@ const ThemeContext = createContext<ThemeCtx>({
   toggleTheme: () => {},
 });
 
-const STORAGE_KEY = "pallavi-theme"; // Must match the inline script in layout.tsx
+// const STORAGE_KEY = "pallavi-theme"; // Must match the inline script in layout.tsx
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   // Initialize from current <html> class to avoid any secondary flash
@@ -41,9 +41,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       document.documentElement.classList.toggle("dark", next === "dark");
 
       // Persist
-      try {
-        localStorage.setItem(STORAGE_KEY, next);
-      } catch (_) {}
+      // try {
+      //   localStorage.setItem(STORAGE_KEY, next);
+      // } catch (_) {}
 
       // Remove transition class after animation
       window.setTimeout(() => {
