@@ -26,15 +26,12 @@ export default function HomePage() {
             {/* Photo */}
             <div className="relative w-40 h-40 md:w-44 md:h-44  mb-8" data-reveal>
               <div className="w-full h-full rounded-full overflow-hidden border border-[var(--border)]">
-                <Image
-                  src=""
-                  alt="Pallavi Wagh — UI/UX Designer based in Pune"
-                  fill
-                  sizes="(max-width: 768px) 160px, 176px"
-                  className="object-cover"
-                  priority
-                  fetchPriority="high"
-                />
+              <Image
+                src="/avatar.jpg"
+                alt="Pallavi Wagh — UI/UX Designer"
+                className="rounded-full"
+                fill
+              />
               </div>      
             </div>
           {/* Tag line */}

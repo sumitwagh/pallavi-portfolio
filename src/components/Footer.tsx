@@ -17,7 +17,7 @@ export default function Footer() {
             <p className="font-sans text-xs uppercase tracking-[0.18em] text-[var(--muted)] mb-5">
               Let&apos;s build something together
             </p>
-            <h2 className="font-neue text-display-md text-[var(--ink)] leading-tight mb-6">
+            <h2 className="font-neue text-display-md text-[var(--ink)] leading-tight">
               Got a project in mind?
             </h2>
             <a
