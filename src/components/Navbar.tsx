@@ -10,10 +10,8 @@ import { cn } from "@/lib/utils";
 const NAME_VARIANTS = [
   { text: "Pallavi",  lang: "English"    },
   { text: "पल्लवी",   lang: "Marathi"    },
-  { text: "పల్లవి",  lang: "Telugu"    },
-  { text: "Pallavi",  lang: "German"     },
-  { text: "Pallavi",  lang: "French"     },
-  { text: "パラヴィ",  lang: "Japanese" },
+  { text: "పల్లవి",  lang: "Telugu"     },
+  { text: "パラヴィ",  lang: "Japanese"   },
   { text: "Паллави", lang: "Russian"    },
 ] as const;
 
@@ -51,7 +49,7 @@ export default function Navbar() {
         setNameShow(true);
       }, 380);
       return () => clearTimeout(t);
-    }, 2800);
+    }, 1800);
     return () => clearInterval(id);
   }, []);
 
@@ -91,7 +89,7 @@ export default function Navbar() {
           className="flex items-baseline gap-2 min-w-0"
         >
           <span
-            className="font-neue text-[0.9375rem] font-medium text-[var(--ink)] tracking-tight leading-none"
+            className="font-neue text-[20px] font-medium text-[var(--ink)] leading-none"
             style={{
               opacity: nameShow ? 1 : 0,
               transform: nameShow ? "translateY(0)" : "translateY(5px)",
@@ -103,7 +101,7 @@ export default function Navbar() {
           </span>
           {/* Always-visible accessible label */}
           <span className="sr-only">Pallavi Wagh</span>
-          <span
+          {/* <span
             className="font-sans text-[10px] text-[var(--muted)] uppercase tracking-[0.14em] leading-none self-center hidden sm:block"
             aria-hidden="true"
             style={{
@@ -112,7 +110,7 @@ export default function Navbar() {
             }}
           >
             {NAME_VARIANTS[nameIdx].lang}
-          </span>
+          </span> */}
         </Link>
 
         {/* Desktop nav */}
@@ -139,17 +137,17 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Open résumé (new tab)"
-            className="link-underline font-sans text-sm text-[var(--muted)] hover:text-[var(--ink)] transition-colors"
+            className="font-sans text-sm px-5 py-2 rounded-full border border-[var(--ink)] text-[var(--ink)] hover:bg-[var(--ink)] hover:text-[var(--paper)] transition-all duration-200 whitespace-nowrap"
           >
             Résumé&nbsp;↗
           </a>
 
-          <a
+          {/* <a
             href="mailto:hey@pallaviwagh.com"
             className="font-sans text-sm px-5 py-2 rounded-full border border-[var(--ink)] text-[var(--ink)] hover:bg-[var(--ink)] hover:text-[var(--paper)] transition-all duration-200 whitespace-nowrap"
           >
             Hire me
-          </a>
+          </a> */}
 
           {/* Theme toggle */}
           <button
