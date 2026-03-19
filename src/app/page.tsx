@@ -21,51 +21,13 @@ export default function HomePage() {
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section aria-label="Introduction" className="w-full">
-        <div className="max-w-site mx-auto px-6 md:px-10 pt-32 pb-16 min-h-[90vh] flex flex-col justify-end">
-          {/* Tag line */}
-          <p className="font-sans text-xs uppercase tracking-[0.2em] text-[var(--muted)] mb-8">
-            UI/UX Designer&nbsp;&nbsp;·&nbsp;&nbsp;Pune, India&nbsp;&nbsp;·&nbsp;&nbsp;Open to full-time roles
-          </p>
-
-          {/* Display headline */}
-          <h1 className="font-neue text-display-xl text-[var(--ink)] mb-12 max-w-5xl">
-            Design is more about
-            <br />
-            <em className="not-italic text-[var(--accent)]">creating a narrative</em>
-            <br />
-            that resonates.
-          </h1>
-
-          {/* Bottom row */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 border-t border-[var(--border)] pt-8">
-            {/* Bio + CTAs */}
-            <div className="md:max-w-md" data-reveal>
-              <p className="font-sans text-base text-[var(--muted)] leading-relaxed mb-7">
-                Hi, I&apos;m Pallavi — an engineer who fell in love with design. Four years helping
-                fintech companies, health platforms, and e-commerce brands turn messy user problems
-                into clean, buildable products.
-              </p>
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/work"
-                  className="font-sans text-sm px-6 py-3 rounded-full bg-[var(--ink)] text-[var(--paper)] hover:opacity-75 transition-opacity"
-                >
-                  See my work
-                </Link>
-                <a
-                  href="mailto:hey@pallaviwagh.com"
-                  className="link-underline font-sans text-sm text-[var(--muted)] hover:text-[var(--ink)] transition-colors"
-                >
-                  hey@pallaviwagh.com
-                </a>
-              </div>
-            </div>
-
+       
+        <div className="max-w-site mx-auto px-6 md:px-10 pt-32 pb-16 min-h-[90vh] flex flex-col justify-center items-center">
             {/* Photo */}
-            <div className="relative w-40 h-52 md:w-44 md:h-58 flex-shrink-0 self-start md:self-auto" data-reveal>
-              {/* <div className="w-full h-full rounded-2xl overflow-hidden border border-[var(--border)]">
+            <div className="relative w-40 h-40 md:w-44 md:h-44  mb-8" data-reveal>
+              <div className="w-full h-full rounded-full overflow-hidden border border-[var(--border)]">
                 <Image
-                  src="https://framerusercontent.com/images/AQh37UKtxY1KBKZC1lBxJCKIg.png"
+                  src=""
                   alt="Pallavi Wagh — UI/UX Designer based in Pune"
                   fill
                   sizes="(max-width: 768px) 160px, 176px"
@@ -73,13 +35,41 @@ export default function HomePage() {
                   priority
                   fetchPriority="high"
                 />
-              </div> */}
-           
-              {/* <div className="absolute -bottom-3 -left-3 bg-[var(--paper)] border border-[var(--border)] rounded-xl px-3 py-1.5 shadow-sm flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" aria-hidden="true" />
-                <span className="font-sans text-[11px] font-medium text-[var(--ink)]">Available</span>
-              </div> */}
+              </div>      
             </div>
+          {/* Tag line */}
+
+          {/* Display headline */}
+          <h1 className="font-neue text-center text-display-md text-[var(--ink)] mb-12 max-w-3xl">
+          
+              Hey! I&apos;m Pallavi, a  <em className="not-italic text-[var(--accent)]">UI/UX Designer</em> building experiences at 21n. <br/><br/>
+              I&apos;m curious about how design changes the way we think.
+          </h1>
+               {/* <div className="md:max-w-md" data-reveal>
+              <p className="font-sans text-base text-[var(--muted)] leading-relaxed mb-7">
+                Hey! I&apos;m Pallavi, a UI/UX Designer building experiences. I&apos;m curious about how design changes the way we think.
+              </p>
+            </div> */}
+    
+            <div className="flex flex-wrap items-center justify-center gap-4">
+                <Link
+                  href="/work"
+                  className="font-sans text-sm px-6 py-3 rounded-full bg-[var(--ink)] text-[var(--paper)] hover:opacity-75 transition-opacity"
+                >
+                  See my work
+                </Link>
+                {/* <a
+                  href="mailto:hey@pallaviwagh.com"
+                  className="link-underline font-sans text-sm text-[var(--muted)] hover:text-[var(--ink)] transition-colors"
+                >
+                  hey@pallaviwagh.com
+                </a> */}
+              </div>
+
+          {/* Bottom row */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 pt-8">
+            {/* Bio + CTAs */}
+       
           </div>
         </div>
       </section>
